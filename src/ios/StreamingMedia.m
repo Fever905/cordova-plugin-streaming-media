@@ -176,7 +176,6 @@ NSString * const DEFAULT_IMAGE_SCALE = @"center";
     NSLog(@"orientationchanged called");
        [self cleanup];
     //Kludge to make the player exit before video ends .. yes Bad bad I know
-    }
 }
 
 -(void)setImage:(NSString*)imagePath withScaleType:(NSString*)imageScaleType {
