@@ -174,10 +174,8 @@ NSString * const DEFAULT_IMAGE_SCALE = @"center";
 
 - (void)orientationChanged:(NSNotification *)notification {
     NSLog(@"orientationchanged called");
-    if (imageView != nil) {
-        // adjust imageView for rotation
-        imageView.bounds = moviePlayer.contentOverlayView.bounds;
-        imageView.frame = moviePlayer.contentOverlayView.frame;
+       [self cleanup];
+    //Kludge to make the player exit before video ends .. yes Bad bad I know
     }
 }
 
